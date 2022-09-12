@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+main {
+  background: url("img/background-crew-mobile.jpg") no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.secret-holder {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  /*max-width: 50%;*/
+  max-width: 95%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.ham:hover .lists {
+  display: block;
+  background: white;
+  right: 35%;
+  left: 0;
+  /*top: 8%;*/
+  padding: 1rem;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.ham:hover .lists li a {
+  color: black;
+}
+
+.line-none {
+  display: none;
+}
+
+.lists {
+  /*background: black;*/
+  display: none;
+  height: 100%;
+  position: absolute;
+  gap: 1rem;
+}
+
+.lists li {
+  margin-top: 1rem;
+  list-style: circle;
+}
+
+.lists li a {
+  font-size: 20px;
+  color: white;
+}
+
+.lists-none {
+  display: none;
+}
+
+.under-line,
+.under-line-special,
+.technology-underline {
+  display: none;
+}
+
+.empty-holder {
+  display: none;
+}
+
+/* REAL */
+.real {
+  width: 100%;
+  margin: 1rem auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.grey {
+  color: grey;
+}
+
+.left {
+  text-align: center;
+  /*margin-bottom: 2rem;*/
+}
+
+.p1 {
+  font-size: 30px;
+  color: grey;
+  font-family: sans-serif;
+  -webkit-text-stroke: 1px grey;
+  /*margin-bottom: 1rem;*/
+}
+
+.p2 {
+  font-size: 80px;
+  color: white;
+  font-family: initial;
+}
+
+.p3 {
+  font-size: 40px;
+  font-family: initial;
+  margin-top: 1rem;
+  color: white;
+  -webkit-text-stroke: 1px grey;
+  margin-bottom: 1rem;
+}
+
+.p4 {
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  -webkit-text-stroke: 1px grey;
+  /*margin-bottom: 1rem;*/
+}
+
+.p5 {
+  font-family: sans-serif;
+  color: grey;
+  font-size: 20px;
+}
+
+.left img {
+  width: 70%;
+}
+
+.right {
+  width: 100%;
+  /*max-width: 10rem;*/
+  /* text-align: center; */
+  /*margin: 5rem auto;*/
+  /*margin: 2rem auto;*/
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 50rem;
+  /*height: 10rem;*/
+}
+
+.list-checked {
+  background: white;
+  display: block;
+  height: 0.2rem;
+  border-radius: 10rem;
+  margin-top: 1rem;
+  /*margin-left: 0.1rem;*/
+  /*width: 10.4rem;*/
+}
+
+.text {
+  margin-top: 1.5rem;
+}
+
+.none-desktop {
+  margin-bottom: 2rem;
+}
+
+.none-mobile {
+  display: none;
+}
+
+.dots {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 5rem;
+  /*margin:  auto;*/
+}
+
+.text {
+  width: 100%;
+  max-width: 75%;
+  margin: auto;
+}
+
+@media all and (min-width: 1440px) {
+  main {
+    overflow-x: auto;
+    /*overflow: hidden;*/
+    background: url("img/background-crew-desktop.jpg") no-repeat;
+    height: 100%;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-size: cover;
+    font-family: monospace;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .line-none {
+    background: #4e6477;
+    width: 65rem;
+    margin-right: -25rem;
+    height: 2px;
+    /*margin-left: 27rem;*/
+    /*position: absolute;*/
+  }
+
+  .empty-holder {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 60%;
+    padding: 2rem;
+    margin-right: -5rem;
+    /*background: rgb(69, 87, 115);*/
+    /*background: #4e6477;*/
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+  }
+
+  .lists-none {
+    display: flex;
+    top: -3.7rem;
+    margin-right: 22.5rem;
+    float: right;
+    position: inherit;
+    gap: 2rem;
+  }
+
+  .lists-none li a {
+    font-size: 20px;
+    color: white;
+  }
+
+  .checked {
+    background: white;
+    display: block;
+    height: 0.2rem;
+    margin-top: 1rem;
+    margin-left: 0.1rem;
+    width: 5.3rem;
+  }
+
+  .no2 {
+    width: 5.4rem;
+  }
+
+  .home-underline {
+    background: white;
+    height: 0.2rem;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .lists-none li:nth-child(2):hover .home-underline {
+    display: block;
+  }
+
+  .crew-underline {
+    background: white;
+    display: none;
+    height: 0.2rem;
+    margin-top: 1rem;
+    width: 5.4rem;
+  }
+
+  .lists-none li:nth-child(3):hover .crew-underline {
+    display: block;
+  }
+
+  .technology-underline {
+    background: white;
+    height: 0.2rem;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .lists-none li:last-child:hover .technology-underline {
+    display: block;
+  }
+
+  /*.lists-none li:first-child {*/
+  /*  border-bottom: 2px solid white;*/
+  /*}*/
+
+  /*.lists-none li:hover {*/
+  /*  border-bottom: 2px solid white;*/
+  /*}*/
+
+  .line-none {
+    display: block;
+  }
+
+  /* REAL */
+  .real {
+    display: flex;
+    width: 100%;
+    max-width: 82%;
+    gap: 1rem;
+    justify-content: space-between;
+    text-align: left;
+    height: 60%;
+    align-items: center;
+    margin-top: 8rem;
+  }
+
+  .left {
+    text-align: initial;
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .background {
+    margin-left: 0.5rem;
+    font-size: 20px;
+  }
+
+  .none-mobile {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .none-desktop {
+    display: none;
+  }
+
+  .flex1,
+  .flex2,
+  .flex3,
+  .flex4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+  }
+
+  .flex1,
+  .flex2,
+  .flex3 {
+    border-right: #4e6477 5px dotted;
+  }
+
+  .flex1 img,
+  .flex2 img,
+  .flex3 img,
+  .flex4 img {
+    width: 55rem;
+    height: 40rem;
+  }
+
+  .flex1 p:first-child,
+  .flex2 p:first-child,
+  .flex3 p:first-child,
+  .flex4 p:first-child {
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+  }
+}
